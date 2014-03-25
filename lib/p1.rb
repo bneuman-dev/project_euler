@@ -1,3 +1,3 @@
-def multiple_of_3?(num)
-  num % 3 == 0
+def multiple_of_x?(x, num)
+  num % x == 0
 end
