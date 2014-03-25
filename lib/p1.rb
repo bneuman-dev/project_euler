@@ -1,11 +1,9 @@
 def sum_up_multiples_of_3_and_5(min, max)
-  (min..max).reduce(0) do |accum, num|
-    accum += if multiple_of_x?(3, num) || multiple_of_x?(5, num)
-      num
-    else
-      0
-    end
+  sum = 0
+  (min..max).each do |num| 
+    sum += num if multiple_of_x?(3, num) || multiple_of_x?(5, num)
   end
+  sum
 end
 
 def multiple_of_x?(x, num)
