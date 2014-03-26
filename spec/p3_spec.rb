@@ -14,7 +14,7 @@ describe "#largest_prime_factor" do
     expect(largest_prime_factor(5)).to eq 5
   end
   
-  # it "returns 3 for 9" do
-  #   expect(largest_prime_factor(9)).to eq 3
-  # end
+  it "returns 3 for 9" do
+    expect(largest_prime_factor(9)).to eq 3
+  end
 end
