@@ -1,12 +1,21 @@
+require 'prime'
+
 def largest_prime_factor(num)
-  (2..(num / 2)).each do |divisor|
-    if num.has_factor?(divisor)
-      other_factor = num / divisor
-      return other_factor if is_prime?(other_factor)
-    end
-  end
-  num
+  num.prime_division.last.first
 end
+
+
+
+
+# def largest_prime_factor(num)
+#   (2..(num / 2)).each do |divisor|
+#     if num.has_factor?(divisor)
+#       other_factor = num / divisor
+#       return other_factor if is_prime?(other_factor)
+#     end
+#   end
+#   num
+# end
 
 def is_prime?(num)
   (2..(num / 2)).each do |divisor|
@@ -20,3 +29,4 @@ class Fixnum
     self % divisor == 0
   end
 end
+
