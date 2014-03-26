@@ -33,6 +33,6 @@ end
 
 describe "#is_prime?" do
   it "returns false for non-prime" do
-    expect(is_prime?(4)).to be_false
+    expect(4.is_prime?).to be_false
   end
 end
