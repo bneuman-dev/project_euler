@@ -18,7 +18,15 @@ describe "#largest_prime_factor" do
     expect(largest_prime_factor(9)).to eq 3
   end
 
-  it "returns correctly for a high number with obscure prime factors" do
-    expect(largest_prime_factor(10345739)).to eq 6793
+  it "returns 2 for 16" do
+    expect(largest_prime_factor(16)).to eq 2
   end
+
+  # it "returns correctly for a high number with obscure prime factors" do
+  #   expect(largest_prime_factor(10345739)).to eq 6793
+  # end
+
+  # it "returns correctly for Euler problem" do
+  #   expect(largest_prime_factor(600851475143)).to eq 6857
+  # end
 end
