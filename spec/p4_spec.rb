@@ -30,3 +30,9 @@ describe "#is_palindrome?" do
     expect(is_palindrome?("12")).to be_false
   end
 end
+
+describe "#highest_palindrome" do
+  it "is 906609" do
+    expect(highest_palindrome).to eq 906609
+  end
+end
