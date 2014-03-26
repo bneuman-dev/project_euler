@@ -17,4 +17,16 @@ describe "#is_palindrome?" do
   it "returns false for odd-length non-palindrome" do
     expect(is_palindrome?("10111")).to be_false
   end
+
+  it "handles 1 digit string" do
+    expect(is_palindrome?("3")).to be_true
+  end
+
+  it "handles 2 digit string" do
+    expect(is_palindrome?("11")).to be_true
+  end
+
+  it "handles 2 digit non-palindrome" do
+    expect(is_palindrome?("12")).to be_false
+  end
 end
